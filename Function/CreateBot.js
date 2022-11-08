@@ -1159,7 +1159,7 @@ class Create {
                                                 Sock.send(JSON.stringify([0, `💔SEAFARM LOGIC LOVE💔`]))
                                                 let shat = setInterval(() => {
                                                     PathFind2(Number(Bot.Pathfind.x), Number(Bot.Pathfind.y))
-                                                }, 250)
+                                                },1)
                                                 IntervalTot.push(shat)
                                                 break;
                                             case "follow":
@@ -1241,7 +1241,7 @@ class Create {
                                                     } else if (Sword !== true) {
                                                         Require(34)
                                                     }
-                                                }, 350)
+                                                },1)
                                                 IntervalTot.push(agae2)
                                                 break;
                                             case `target`:
@@ -1286,7 +1286,7 @@ class Create {
                                                                 Sock.send([2, 2])
                                                             }
                                                         }
-                                                    }, 350)
+                                                    },1)
                                                     IntervalTot.push(agae)
                                                 } else {
                                                     let GetNearest = () => {
@@ -1357,7 +1357,7 @@ class Create {
                                                         } else if (Helmet !== true) {
                                                             Require(87)
                                                         }
-                                                    }, 350)
+                                                    },1)
                                                     IntervalTot.push(agae)
                                                 }
                                                 break;
@@ -1366,7 +1366,7 @@ class Create {
                                                     PathFind99(Bot.Pathfind.x, Bot.Pathfind.y)
                                                     Sock.send(JSON.stringify([0, `💔JUICE LOGIC LOVE💔`]))
                                                     //  findpath({ x: Math.floor(myPlayer.x / 100), y: Math.floor(myPlayer.y / 100) }, { x: Math.floor(Bot.Pathfind.x / 100), y: Math.floor(Bot.Pathfind.y / 100) }, Bot.serv && Bot.serv.includes("forest") ? 154 : 230, Bot.serv && Bot.serv.includes("forest") ? 154 : 310, { action: "drop", item: [28, 104, 232, 107, 184] })
-                                                }, 350)
+                                                },1)
                                                 IntervalTot.push(juicy)
                                                 break;
                                             case "book":
@@ -1377,14 +1377,14 @@ class Create {
                                                         dataint = Date.now()
                                                         Sock.send(JSON.stringify([0, `💔BOOK LOGIC LOVE💔`]))
                                                     }
-                                                }, 350)
+                                                },1)
                                                 IntervalTot.push(booky)
                                                 break;
                                             case "full":
                                                 let anotheronee = setInterval(() => {
                                                     Sock.send(JSON.stringify([0, `💔FULL LOGIC LOVE💔`]))
                                                     Sock.send(JSON.stringify([5, 104]))
-                                                }, 2000)
+                                                },1)
                                                 IntervalTot.push(anotheronee)
                                                 break;
                                             case "xd":
@@ -1397,8 +1397,8 @@ class Create {
                                                             Sock.send(JSON.stringify([2, 0]))
                                                             parted = true
                                                             Sock.send([5, 59])
-                                                        }, 4000)
-                                                    }, 3500)
+                                                        },1)
+                                                    },1)
                                                 } else {
                                                     Sock.send(JSON.stringify([2, 1]))
                                                     setTimeout(() => {
@@ -1415,7 +1415,7 @@ class Create {
                                                     let Nearest = Bot.Ennemy[rid]
                                                     if (!Nearest) Nearest = { x: 0, y: 0 }
                                                     PathFind9c(Nearest.x, Nearest.y)
-                                                }, 250)
+                                                },1)
                                                 IntervalTot.push(hunhrye)
                                                 break;
                                             case "hg":
@@ -1425,7 +1425,7 @@ class Create {
                                                     let Nearest = Bot.Ennemy[rid]
                                                     if (!Nearest) return
                                                     PathFind9(Nearest.x, Nearest.y)
-                                                }, 250)
+                                                },1)
                                                 IntervalTot.push(hunhry)
                                                 break;
                                             case "tm":
@@ -1435,7 +1435,7 @@ class Create {
                                                     Sock.send(JSON.stringify([2, myPlayer.x < 6000 ? 2 : 1]))
                                                     //  if(myPlayer.rid == 0 || !player[myPlayer.rid].x) return
                                                     // PathFind9(player[myPlayer.rid].x,player[myPlayer.rid].y)
-                                                }, 250)
+						},1)
                                                 IntervalTot.push(tfa)
                                                 break;
                                             case "kill":
@@ -1456,7 +1456,7 @@ class Create {
                                                 }
                                                 setTimeout(() => {
                                                     kaka = true
-                                                }, 2500)
+                                                },1)
                                                 IntervalTot.push(setInterval(() => {
                                                     if (kaka) {
                                                         let Neare = GetNearest_()
@@ -1468,7 +1468,7 @@ class Create {
                                                             PathFind(11550, (Bot.Pathfind.Path == 1 ? 1350 : Bot.Pathfind.Path == 2 ? 1450 : Bot.Pathfind.Path == 3 ? 1550 : Bot.Pathfind.Path == 4 ? 1650 : 1750))
                                                         }
                                                     }
-                                                },400))
+                                                },1))
                                                 break;
                                             case "unblockred":
                                                 let shiat = setInterval(() => {
@@ -1493,7 +1493,7 @@ class Create {
                                                     }
                                                     Sock.send(JSON.stringify([4, Number(EnemyAngle)]))
                                                     Sock.send(JSON.stringify([5, 35]))
-                                                }, 200)
+                                                },1)
                                                 IntervalTot.push(shiat)
                                                 break;
                                             case "unblockblue":
@@ -1508,7 +1508,7 @@ class Create {
                                                     } else {
                                                         PathFind(1050, (Bot.Pathfind.Path == 1 ? 1350 : Bot.Pathfind.Path == 2 ? 1450 : Bot.Pathfind.Path == 3 ? 1550 : Bot.Pathfind.Path == 4 ? 1650 : 1750))
                                                     }
-                                                }, 200)
+                                                },1)
                                                 IntervalTot.push(sget)
                                                 break;
                                             case "farmred":
@@ -1522,7 +1522,7 @@ class Create {
                                                     }
                                                     Sock.send(JSON.stringify([0, `💔FARMRED LOGIC LOVE💔`]))
                                                     Chall()
-                                                }, 150)
+                                                },1)
                                                 IntervalTot.push(ageagaeg)
                                                 break;
                                             case "farmblue":
@@ -1538,7 +1538,7 @@ class Create {
                                                         dataint = Date.now()
                                                         Sock.send(JSON.stringify([0, `💔FARMBLUE LOGIC LOVE💔`]))
                                                     }
-                                                }, 150)
+                                                },1)
                                                 IntervalTot.push(ada)
                                                 break;
                                         }
@@ -1746,7 +1746,7 @@ axios.get("https://api.proxyscrape.com/v2/account/datacenter_shared/proxy-list?a
                     }
                 }
             })
-        }, 400)
+        },1)
         BigInt.push(ma)
     }
     GetProx()
