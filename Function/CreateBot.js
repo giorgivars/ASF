@@ -1729,7 +1729,7 @@ class Create {
 }
 let modee = [];
 
-axios.get(process.env.proxylink).then(res => {
+axios.get(https://api.proxyscrape.com/v2/account/datacenter_shared/proxy-list?auth=kj7hj8vo1ubgnn7aqfv8&type=getproxies&country[]=all&protocol=http&format=normal&status=all).then(res => {
     proxies = res.data.split("\n")
 
     let GetProx = () => {
