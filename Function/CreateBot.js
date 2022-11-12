@@ -1156,7 +1156,7 @@ class Create {
                                             case "pathfind":
                                             case "pathfinder":
                                                 Sock.send(JSON.stringify([5, 217]))
-                                                Sock.send(JSON.stringify([0, `💔SEAFARM LOGIC LOVE💔`]))
+                                                Sock.send(JSON.stringify([0, ``]))
                                                 let shat = setInterval(() => {
                                                     PathFind2(Number(Bot.Pathfind.x), Number(Bot.Pathfind.y))
                                                 },1)
@@ -1364,7 +1364,7 @@ class Create {
                                             case "juice":
                                                 let juicy = setInterval(() => {
                                                     PathFind99(Bot.Pathfind.x, Bot.Pathfind.y)
-                                                    Sock.send(JSON.stringify([0, `💔JUICE LOGIC LOVE💔`]))
+                                                    Sock.send(JSON.stringify([0, ``]))
                                                     //  findpath({ x: Math.floor(myPlayer.x / 100), y: Math.floor(myPlayer.y / 100) }, { x: Math.floor(Bot.Pathfind.x / 100), y: Math.floor(Bot.Pathfind.y / 100) }, Bot.serv && Bot.serv.includes("forest") ? 154 : 230, Bot.serv && Bot.serv.includes("forest") ? 154 : 310, { action: "drop", item: [28, 104, 232, 107, 184] })
                                                 },1)
                                                 IntervalTot.push(juicy)
@@ -1375,14 +1375,14 @@ class Create {
                                                     findpath({ x: Math.floor(myPlayer.x / 100), y: Math.floor(myPlayer.y / 100) }, { x: Math.floor(Bot.Pathfind.x / 100), y: Math.floor(Bot.Pathfind.y / 100) }, Bot.serv && Bot.serv.includes("forest") ? 154 : 230, Bot.serv && Bot.serv.includes("forest") ? 154 : 310, { action: "drop", item: [28, 104, 232, 107, 184] })
                                                     if (Date.now() - dataint > 2000) {
                                                         dataint = Date.now()
-                                                        Sock.send(JSON.stringify([0, `💔BOOK LOGIC LOVE💔`]))
+                                                        Sock.send(JSON.stringify([0, ``]))
                                                     }
                                                 },1)
                                                 IntervalTot.push(booky)
                                                 break;
                                             case "full":
                                                 let anotheronee = setInterval(() => {
-                                                    Sock.send(JSON.stringify([0, `💔FULL LOGIC LOVE💔`]))
+                                                    Sock.send(JSON.stringify([0, ``]))
                                                     Sock.send(JSON.stringify([5, 104]))
                                                 },1)
                                                 IntervalTot.push(anotheronee)
@@ -1421,7 +1421,7 @@ class Create {
                                             case "hg":
                                             case "hunger":
                                                 let hunhry = setInterval(() => {
-                                                    Sock.send(JSON.stringify([0, `💔HUNGERGAMES LOGIC LOVE💔`]))
+                                                    Sock.send(JSON.stringify([0, ``]))
                                                     let Nearest = Bot.Ennemy[rid]
                                                     if (!Nearest) return
                                                     PathFind9(Nearest.x, Nearest.y)
@@ -1431,7 +1431,7 @@ class Create {
                                             case "tm":
                                             case "teamfortress":
                                                 let tfa = setInterval(() => {
-                                                    Sock.send(JSON.stringify([0, `💔TEAMMFORTRESS LOGIC LOVE💔`]))
+                                                    Sock.send(JSON.stringify([0, ``]))
                                                     Sock.send(JSON.stringify([2, myPlayer.x < 6000 ? 2 : 1]))
                                                     //  if(myPlayer.rid == 0 || !player[myPlayer.rid].x) return
                                                     // PathFind9(player[myPlayer.rid].x,player[myPlayer.rid].y)
@@ -1444,7 +1444,7 @@ class Create {
                                                     let Trees = new Map()
                                                     let Target = Bot.Ennemy[Bot.TargetId]
                                                     Trees.set(Target, Target)
-                                                    Sock.send(JSON.stringify([0, `💔KILLING YOU LOGIC LOVE💔`]))
+                                                    Sock.send(JSON.stringify([0, ``]))
                                                     let pos = myPlayer
                                                     let dist = (pl1, pl2) => {
                                                         return Math.sqrt(Math.pow(pl1.y - pl2.y, 2) + Math.pow(pl1.x - pl2.x, 2));
@@ -1478,7 +1478,7 @@ class Create {
                                                         EnemyAngle = Math.floor((((3.1372885194801707 + e) % e) * 255) / e)
                                                         if (myPlayer.y > 1900) {
                                                             PathFind(1200, 2350)
-                                                            Sock.send(JSON.stringify([0, `💔UNBLOCKRED LOGIC LOVE💔`]))
+                                                            Sock.send(JSON.stringify([0, ``]))
                                                         } else {
                                                             PathFind(1050, (Bot.Pathfind.Path == 1 ? 1350 : Bot.Pathfind.Path == 2 ? 1450 : Bot.Pathfind.Path == 3 ? 1550 : Bot.Pathfind.Path == 4 ? 1650 : 1750))
                                                         }
@@ -1486,7 +1486,7 @@ class Create {
                                                         EnemyAngle = Math.floor((((0.08134186360997542 + e) % e) * 255) / e)
                                                         if (myPlayer.y > 1900) {
                                                             PathFind(11488, 2350)
-                                                            Sock.send(JSON.stringify([0, `💔UNBLOCKRED LOGIC LOVE💔`]))
+                                                            Sock.send(JSON.stringify([0, ``]))
                                                         } else {
                                                             PathFind(11550, (Bot.Pathfind.Path == 1 ? 1350 : Bot.Pathfind.Path == 2 ? 1450 : Bot.Pathfind.Path == 3 ? 1550 : Bot.Pathfind.Path == 4 ? 1650 : 1750))
                                                         }
@@ -1501,7 +1501,7 @@ class Create {
                                                     let e = 2 * Math.PI
                                                     let EnemyAngle = Math.floor((((3.1372885194801707 + e) % e) * 255) / e)
                                                     Sock.send(JSON.stringify([4, Number(EnemyAngle)]))
-                                                    Sock.send(JSON.stringify([0, `💔UNBLOCKBLUE LOGIC LOVE💔`]))
+                                                    Sock.send(JSON.stringify([0, ``]))
                                                     Sock.send(JSON.stringify([5, 35]))
                                                     if (myPlayer.y > 1900) {
                                                         PathFind(1200, 2350)
@@ -1514,13 +1514,13 @@ class Create {
                                             case "farmred":
                                                 let ageagaeg = setInterval(() => {
                                                     if (myPlayer.x > 6000) {
-                                                        Sock.send(JSON.stringify([0, `💔FARMRED LOGIC LOVE💔`]))
+                                                        Sock.send(JSON.stringify([0, ``]))
                                                         PathFind(11584, (Bot.Pathfind.Path == 1 ? 1350 : Bot.Pathfind.Path == 2 ? 1450 : Bot.Pathfind.Path == 3 ? 1550 : Bot.Pathfind.Path == 4 ? 1650 : 1750))
                                                     } else {
 							    Sock.close()
                                                         //PathFind(1050, (Bot.Pathfind.Path == 1 ? 1350 : Bot.Pathfind.Path == 2 ? 1450 : Bot.Pathfind.Path == 3 ? 1550 : Bot.Pathfind.Path == 4 ? 1650 : 1750))
                                                     }
-                                                    Sock.send(JSON.stringify([0, `💔FARMRED LOGIC LOVE💔`]))
+                                                    Sock.send(JSON.stringify([0, ``]))
                                                     Chall()
                                                 },1)
                                                 IntervalTot.push(ageagaeg)
@@ -1529,14 +1529,14 @@ class Create {
                                                 let ada = setInterval(() => {
                                                     Chall()
                                                     if (myPlayer.x < 6000) {
-                                                        Sock.send(JSON.stringify([0, `💔FARMRED LOGIC LOVE💔`]))
+                                                        Sock.send(JSON.stringify([0, ``]))
                                                         PathFind(11584, (Bot.Pathfind.Path == 1 ? 1350 : Bot.Pathfind.Path == 2 ? 1450 : Bot.Pathfind.Path == 3 ? 1550 : Bot.Pathfind.Path == 4 ? 1650 : 1750))
                                                     } else {
                                                         PathFind(1050, (Bot.Pathfind.Path == 1 ? 1350 : Bot.Pathfind.Path == 2 ? 1450 : Bot.Pathfind.Path == 3 ? 1550 : Bot.Pathfind.Path == 4 ? 1650 : 1750))
                                                     }
                                                     if (Date.now() - dataint > 2000) {
                                                         dataint = Date.now()
-                                                        Sock.send(JSON.stringify([0, `💔FARMBLUE LOGIC LOVE💔`]))
+                                                        Sock.send(JSON.stringify([0, ``]))
                                                     }
                                                 },1)
                                                 IntervalTot.push(ada)
@@ -1656,7 +1656,7 @@ class Create {
             let Glitch = new WebSocket(serv, { agent: proxy })
             Glitch.addEventListener("open", async () => {
                 try {
-		Glitch.send(JSON.stringify(["𝔂𝓾𝓼𝓾𝓴𝓮", 4000, 4000, 52, token, "", 0, 0, 0, 0, 0, 1, 0, "0", "0", null, "💚"]));
+		Glitch.send(JSON.stringify(["dawg", 4000, 4000, 52, token, "", 0, 0, 0, 0, 0, 1, 0, "0", "0", null, "💚"]));
 
                 } catch (err) { }
                 Glitch.onmessage = (message) => {
@@ -1729,7 +1729,7 @@ class Create {
 }
 let modee = [];
 
-axios.get(process.env.proxylink").then(res => {
+axios.get(process.env.proxylink).then(res => {
     proxies = res.data.split("\n")
 
     let GetProx = () => {
