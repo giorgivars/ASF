@@ -87,7 +87,7 @@ let tiercooldown = (tier) => {
 }
 let canunblock = true
 client.on('ready', async () => {
-    client.user.setActivity(`Best Bots By Logic#9754????`)
+    client.user.setActivity(`Elyas OP`)
     console.log(`${client.user.username} Making Sure No Error And Loadded Bot!✅`)
     let serverlist = ''
     client.guilds.cache.forEach((guild) => {
