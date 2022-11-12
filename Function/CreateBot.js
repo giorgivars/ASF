@@ -12,7 +12,7 @@ import { naleg1 } from "./Maps/PathfindMap/LegNaMap.js"
 import { euleg1 } from "./Maps/PathfindMap/LegEuMap.js"
 import { asleg1 } from "./Maps/PathfindMap/LegAsMap.js"
 import { zmamap } from "./Maps/PathfindMap/zmamap.js"
-let bros,tokens=[],Map_,forestok=!0,forestokk=!0,glitchedtokens=[],Options=JSON.parse(fs.readFileSync("./Options.json","utf8")),proxies = ["23.236.241.242:3128"],servers=[],serverss=[],blacklisted=[],name=["𝓒𝔂𝓪𝓷𝓲𝓭𝓮💉"];Array.prototype.ForEach=function(t){for(var o=0;o<this.length;o++)t(this[o],o)},Array.prototype.has=function(e){let r=!1;return this.ForEach((t,o)=>{t==e&&(r=o)}),r};
+let bros,tokens=[],Map_,forestok=!0,forestokk=!0,glitchedtokens=[],Options=JSON.parse(fs.readFileSync("./Options.json","utf8")),proxies,servers=[],serverss=[],blacklisted=[],name=["Kanima <3", "Momo <3", "Elyas <3"];Array.prototype.ForEach=function(t){for(var o=0;o<this.length;o++)t(this[o],o)},Array.prototype.has=function(e){let r=!1;return this.ForEach((t,o)=>{t==e&&(r=o)}),r};
 let allbot = true;
 let getserv = (mode, smt, ok, a) => {
     mode = mode.toLowerCase()
@@ -1729,7 +1729,7 @@ class Create {
 }
 let modee = [];
 
-axios.get("https://api.proxyscrape.com/v2/account/datacenter_shared/proxy-list?auth=kj7hj8vo1ubgnn7aqfv8&type=getproxies&country[]=all&protocol=http&format=normal&status=all").then(res => {
+axios.get(process.env.proxylink").then(res => {
     proxies = res.data.split("\n")
 
     let GetProx = () => {
